@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>e-Learning Platform</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>e-Learning Platform</h1>
+  </header>
+
+  <main>
+    <section class="course-list">
+      <h2>Course Listing</h2>
+      <div class="course-card" onclick="loadCourse('course1')">
+        <h3>Progress Tracking</h3>
+        <div class="progress-container">
+          <div class="progress-bar" style="width: 60%;"></div>
+        </div>
+        <span>60% completed</span>
+      </div>
+
+      <div class="course-card" onclick="loadCourse('course2')">
+        <h3>Video Embedding</h3>
+        <div class="progress-container">
+          <div class="progress-bar" style="width: 25%;"></div>
+        </div>
+        <span>25% completed</span>
+      </div>
+    </section>
+
+    <section class="video-player">
+      <h2 id="video-title">Select a Course to Watch</h2>
+      <div class="video-container" id="video-container">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
